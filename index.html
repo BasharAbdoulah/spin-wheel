@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Lucky Spin</h2>
+
+    <div class="mainbox" id="mainbox">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="35"
+        height="35"
+        fill="currentColor"
+        class="bi bi-caret-down-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+        />
+      </svg>
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1"><h5>Test 1</h5></span>
+          <span class="font span2"><h5>Test 2</h5></span>
+          <span class="font span3"><h5>Test 3</h5></span>
+          <span class="font span4"><h5>Test 4</h5></span>
+          <span class="font span5"><h5>Test 5</h5></span>
+        </div>
+        <div class="box2">
+          <span class="font span1"><h5>Test 6</h5></span>
+          <span class="font span2"><h5>Test 7</h5></span>
+          <span class="font span3"><h5>Test 8</h5></span>
+          <span class="font span4"><h5>Test 9</h5></span>
+          <span class="font span5"><h5>Test 10</h5></span>
+        </div>
+      </div>
+      <button class="spin" onclick="spin()">Spin</button>
+    </div>
+    <div class="layout" id="layout">
+      <div class="modal" id="modal">
+        <div class="img">
+          <img
+            id="fedback-img"
+            width="300px"
+            height="300px"
+            src="https://images.unsplash.com/photo-1531686264889-56fdcabd163f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+            alt=""
+          />
+        </div>
+        <div class="caption">
+          <h3 id="congrats">Congratlaions!</h3>
+          <p id="state">You Won.</p>
+          <button id="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+    <audio
+      controls="controls"
+      id="wheel"
+      src="./assets/Untitled.mp3"
+      type="audion/mp3"
+    ></audio>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

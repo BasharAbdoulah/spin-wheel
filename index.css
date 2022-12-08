@@ -41,7 +41,6 @@ body {
   border-radius: 50%;
   border: 8px solid #fff;
   overflow: hidden;
-  transition: all ease-in-out 5s;
   transform: rotate(90deg);
 }
 

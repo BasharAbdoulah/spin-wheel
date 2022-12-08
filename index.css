@@ -27,9 +27,9 @@ body {
 .mainbox .bi {
   content: "";
   position: absolute;
-  right: -7%;
-  top: 48%;
-  transform: rotate(90deg);
+  right: -11%;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
   z-index: 555;
   color: rgb(0, 82, 122);
 }
@@ -229,4 +229,32 @@ span {
 }
 #wheel {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .mainbox {
+    width: 280px;
+    height: 280px;
+    margin-top: 45px;
+  }
+  .font {
+    font-size: 13px;
+  }
+  .spin {
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    border: 2px solid white;
+  }
+
+  .spin:active {
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
+  }
+
+  .img img {
+    width: 200px;
+    height: 200px;
+  }
 }
